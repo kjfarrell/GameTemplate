@@ -24,7 +24,9 @@ Game::Game(SDL_Rect position, const std::string title)
 
 
     m_player->setPosition({0, 0, 32, 32});
-    m_other->setPosition({0, 64, 32, 32});
+    m_other->setPosition({5*32, 64, 32, 32});
+
+    
 
 	
 }
@@ -52,12 +54,22 @@ void Game::run()
         processEvents();
         clearScreen();
 
+        level.update(m_renderer);
+
 
         m_player->update(m_renderer);   
         m_player->move({0, 1});
         if(m_player->hasCollided(m_other.get()))
         {
             m_player->move({0, -1});
+        }
+
+        for(auto &e : level.getEntities())
+        {
+            if(m_player->hasCollided(e.get()))
+            {
+                m_player->move({0, -1});
+            }
         }
 
         m_other->update(m_renderer);

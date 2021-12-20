@@ -24,7 +24,7 @@ void Entity::setPosition(SDL_Rect position)
 void Entity::update(SDL_Renderer *renderer)
 {
     SDL_SetRenderDrawColor(renderer, 255, 255, 255, SDL_ALPHA_OPAQUE);
-    SDL_RenderDrawRect(renderer, &m_position);
+    SDL_RenderFillRect(renderer, &m_position);
 }
 
 void Entity::move(SDL_Point position)

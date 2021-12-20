@@ -16,6 +16,8 @@ public:
 	~Actor();
 
 private:
+	int m_gravity = 1;
+	bool m_isOnGround = false;
 
 };
 #endif

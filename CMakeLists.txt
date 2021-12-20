@@ -4,7 +4,7 @@ project(SDL2Template)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
-set(SRC src/Main.cpp src/Game.cpp src/Entity.cpp src/Actor.cpp)
+set(SRC src/Main.cpp src/Game.cpp src/Entity.cpp src/Actor.cpp src/Level.cpp)
 
 find_package(SDL2 REQUIRED)
 find_package(SDL2_image REQUIRED)

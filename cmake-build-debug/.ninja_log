@@ -1,0 +1,7 @@
+# ninja log v5
+0	500	1639869112472355682	CMakeFiles/SDL2Template.dir/src/Entity.cpp.o	1b7e6cba736d4fca
+0	514	1639869112486355510	CMakeFiles/SDL2Template.dir/src/Actor.cpp.o	856a37aedb864ae5
+0	589	1639869112561354592	CMakeFiles/SDL2Template.dir/src/Main.cpp.o	7ab2182bb4e871ef
+0	615	1639869112587354273	CMakeFiles/SDL2Template.dir/src/Level.cpp.o	89e2659c2170b0e1
+0	617	1639869112589354249	CMakeFiles/SDL2Template.dir/src/Game.cpp.o	2b1f7df4f22b61dd
+617	666	1639869112637353661	SDL2Template	71c60198c586077d

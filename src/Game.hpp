@@ -9,6 +9,7 @@
 
 #include "Entity.hpp"
 #include "Actor.hpp"
+#include "Level.hpp"
 	
 class Game  
 {
@@ -29,6 +30,8 @@ private:
 
 	std::unique_ptr<Actor> m_player = std::make_unique<Actor>();
 	std::unique_ptr<Entity> m_other = std::make_unique<Entity>();
+
+	Level level;
 	
 
 };
